@@ -12,10 +12,13 @@ source:
     # Patch the Makefile.am based on a bug report on SourceForge.
     # https://sourceforge.net/p/flex/bugs/182/
     - Makefile.am.patch
+    # Patch the Makefile.am based on a bug report on SourceForge.
+    # https://sourceforge.net/p/flex/bugs/169/
+    - 0001-bison-test-fixes-Do-not-use-obsolete-bison-construct.patch
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
@@ -25,6 +28,7 @@ requirements:
     - libiconv
     - libtool
     - m4
+    - bison
 
   run:
     - libiconv

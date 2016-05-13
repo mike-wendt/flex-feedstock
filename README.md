@@ -5,7 +5,7 @@ Home: http://flex.sourceforge.net/
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: The Fast Lexical Analyzer
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flex-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/flex-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/flex-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flex-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flex-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flex-feedstock/branch/master)

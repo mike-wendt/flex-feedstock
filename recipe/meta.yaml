@@ -16,12 +16,8 @@ build:
 
 requirements:
   build:
-    - autoconf
     - automake
     - libiconv
-    - libtool
-    - m4
-    - bison
 
   run:
     - libiconv

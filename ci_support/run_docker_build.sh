@@ -46,7 +46,7 @@ source run_conda_forge_build_setup
 # "recipe/yum_requirements.txt" file. After updating that file,
 # run "conda smithy rerender" and this line be updated
 # automatically.
-yum install -y bison help2man
+yum install -y bison
 
 
 # Embarking on 1 case(s).

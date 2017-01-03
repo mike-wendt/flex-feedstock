@@ -11,16 +11,18 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
   build:
     - automake
     - libiconv
+    - m4
 
   run:
     - libiconv
+    - m4
 
 test:
   commands:

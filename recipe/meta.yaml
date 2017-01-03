@@ -32,11 +32,8 @@ test:
 
     # Lib tests
     - test -f ${PREFIX}/lib/libfl.a
-    - test -f ${PREFIX}/lib/libfl_pic.a
     - test -f ${PREFIX}/lib/libfl.dylib      # [osx]
-    - test -f ${PREFIX}/lib/libfl_pic.dylib  # [osx]
     - test -f ${PREFIX}/lib/libfl.so         # [linux]
-    - test -f ${PREFIX}/lib/libfl_pic.so     # [linux]
 
 about:
   home: http://flex.sourceforge.net/

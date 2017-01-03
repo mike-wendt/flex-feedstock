@@ -18,6 +18,7 @@ requirements:
   build:
     - automake
     - libiconv
+    - m4
 
   run:
     - libiconv

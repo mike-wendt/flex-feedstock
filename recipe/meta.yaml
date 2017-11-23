@@ -5,23 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  fn: flex-{{ version }}.tar.gz
   url: https://github.com/westes/flex/releases/download/v{{ version }}/flex-{{ version }}.tar.gz
   sha256: 68b2742233e747c462f781462a2a1e299dc6207401dac8f0bbb316f48565c2aa
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: true
 
 requirements:
   build:
     - automake
-    - libiconv
+    - libiconv 1.15
     - m4
-
   run:
-    - libiconv
+    - libiconv 1.15
     - m4
 
 test:
@@ -36,6 +34,8 @@ test:
     - test -f ${PREFIX}/lib/libfl.a
     - test -f ${PREFIX}/lib/libfl.dylib      # [osx]
     - test -f ${PREFIX}/lib/libfl.so         # [linux]
+    - conda inspect linkages -p ${PREFIX} $PKG_NAME  # [linux]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://flex.sourceforge.net/

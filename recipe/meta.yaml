@@ -10,17 +10,20 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: true
 
 requirements:
   build:
     - automake
-    - libiconv 1.15
     - m4
+    - m4
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - libiconv
   run:
-    - libiconv 1.15
-    - m4
+    - libiconv
 
 test:
   commands:

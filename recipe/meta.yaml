@@ -20,6 +20,7 @@ requirements:
     - automake
     - m4
     - libiconv  # [not linux and not win]
+    - help2man  # [not win]
   run:
     - libiconv  # [not linux and not win]
     - m4
